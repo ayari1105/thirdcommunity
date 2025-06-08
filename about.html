@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>団体概要 - サードコミュニティ</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #fff;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color:  rgba(0, 31, 91, 0.8);
+        color: white;
+        backdrop-filter: blur(8px);
+        padding: 1rem 2rem;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav {
+            margin-top: 0.5rem;
+        }
+
+        nav a {
+            margin-right: 1rem;
+            color: #333;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid #ddd;
+        margin-top: 4rem;
+        font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+
+  <h1><a href="home.html" style="text-decoration: none; color: inherit;">サードコミュニティ</a></h1>
+  <nav>
+      <a href="about.html">団体概要</a>
+      <a href="services.html">活動紹介</a>
+      <a href="services.html">スタッフ募集</a>
+      <a href="contact.html">お問い合わせ</a>
+  </nav>
+  </header>
+
+  <main>
+    <h2>団体概要</h2>
+    <table>
+      <tr>
+        <th>団体名</th>
+        <td>特定非営利活動法人サードコミュニティ</td>
+      </tr>
+      <tr>
+        <th>設立年月日</th>
+        <td>2024年12月10日</td>
+      </tr>
+      <tr>
+        <th>代表者</th>
+        <td>代表理事　峰村　健太</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>東京都立川市錦町一丁目４番４号　サニービル２Ｆ　ＣＳ―１８９</td>
+      </tr>
+      <tr>
+        <th>連絡先</th>
+        <td>info@thirdcommunity.org</td>
+      </tr>
+      <tr>
+        <th>活動分野</th>
+        <td>社会教育,まちづくり,子どもの健全育成,職能開発・雇用拡充,NPO支援</td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    &copy; 2025 特定非営利活動法人サードコミュニティ. All rights reserved.
+  </footer>
+</body>
+</html>
