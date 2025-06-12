@@ -1,0 +1,32 @@
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.document {
+    list-style: none;
+    padding-left: 0;
+}
+
+th {
+    white-space: nowrap;
+}
