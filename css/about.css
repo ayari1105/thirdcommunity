@@ -30,3 +30,28 @@ th, td {
 th {
     white-space: nowrap;
 }
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th {
+        background: #f2f2f2;
+    }
+
+    tr {
+        margin-bottom: 1rem;
+        display: block;
+        border-bottom: 2px solid #ccc;
+    }
+}

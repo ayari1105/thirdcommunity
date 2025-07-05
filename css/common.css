@@ -47,10 +47,15 @@ footer {
     font-size: 0.9rem;
 }
 
+.right_justified {
+    text-align: right;
+}
+
 @media (max-width: 600px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
     }
 
     nav {
@@ -59,7 +64,7 @@ footer {
 
     nav a {
         margin-right: 1rem;
-        color: #333;
+        color: white;
     }
 
     nav a:hover {
