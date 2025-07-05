@@ -28,6 +28,20 @@ header.scrolled {
     background-color: rgba(255, 255, 255, 0.95);
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease forwards;
+  animation-delay: 0.5s; 
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .underline {
     position: relative;
     padding: .3em 0 .2em 1em;
@@ -71,24 +85,36 @@ header.scrolled {
     min-width: 250px;
 }
 
+.activity-text h3 {
+  text-align: center;
+}
+
 .activity-item img {
     width: 300px;
     max-width: 100%;
     border-radius: 8px;
 }
 
-.activity-item.reverse {
-    flex-direction: row-reverse;
+.attend_button {
+  display: inline-block;
+  background-color: #001F5B;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.activity-item.reverse .activity-text {
-    text-align: right;
+.attend_button:hover {
+  background-color: rgba(0, 31, 91, 0.8);
 }
+
 
 @media (max-width: 768px) {
     .activity-item {
-        flex-direction: column-reverse;
-        text-align: center;
+        flex-direction: column;
+        text-align: left;
     }
 
     .activity-text {
@@ -97,5 +123,6 @@ header.scrolled {
 
     .activity-item img {
         width: 100%;
+        height: auto;
     }
 }
