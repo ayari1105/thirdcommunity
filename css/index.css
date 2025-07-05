@@ -112,6 +112,10 @@ header.scrolled {
 
 
 @media (max-width: 768px) {
+    .hero {
+        background-position: top;
+        background-attachment: scroll; 
+    }
     .activity-item {
         flex-direction: column;
         text-align: left;
