@@ -74,15 +74,11 @@ header.scrolled {
 
 .activity-item {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
     gap: 2rem;
     padding: 1.5rem;
     flex-wrap: wrap;
-}
-
-.activity-item.align-bottom {
-  align-items: flex-end; 
 }
 
 .activity-text {
@@ -90,12 +86,15 @@ header.scrolled {
     min-width: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
-    line-height: 2.0em;
 }
 
-.activity-bottom {
+/* .activity-top {
+    margin-bottom: 1rem;
+} */
+
+.right_justified {
+    margin-top: auto; 
     text-align: right;
 }
 
@@ -108,7 +107,7 @@ header.scrolled {
     max-width: 100%;
     border-radius: 8px;
     object-fit: cover;
-    align-self: flex-end;
+    align-self: flex-end; /* 画像を下揃えに */
 }
 
 .attend_button {
@@ -126,17 +125,12 @@ header.scrolled {
   background-color: rgba(0, 31, 91, 0.8);
 }
 
-.right_justified {
-    text-align: right;
-    margin-bottom: 0;
-}
 
 @media (max-width: 768px) {
     .hero {
         background-position: top;
         background-attachment: scroll; 
         font-size: 1.0em;
-        align-items: flex-start;
     }
     .activity-item {
         flex-direction: column;
@@ -151,10 +145,5 @@ header.scrolled {
         width: 100%;
         height: auto;
         align-self: auto; 
-    }
-
-    .right_justified {
-        text-align: center;
-        margin-bottom: 0;
     }
 }

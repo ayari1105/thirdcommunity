@@ -29,10 +29,10 @@ header h1 {
 
 nav a {
     color: white;
+    font-size: 1.2em;
     text-decoration: none;
     margin-left: 1.5rem;
     font-weight: bold;
-    font-size: 0.8em;
 }
 
 nav a:hover {
@@ -47,10 +47,6 @@ footer {
     font-size: 0.9rem;
 }
 
-.right_justified {
-    text-align: right;
-}
-
 @media (max-width: 600px) {
     header {
         flex-direction: row;
@@ -63,6 +59,7 @@ footer {
     }
 
     nav a {
+        font-size: 1.0em;
         margin-right: 1rem;
         color: white;
     }
