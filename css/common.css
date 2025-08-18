@@ -1,7 +1,6 @@
-
 body {
     margin: 0;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     color: #333;
     background-color: #fff;
 }
@@ -27,6 +26,25 @@ header h1 {
     font-size: 1.5rem;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: 0.3s;
+}
+
+#menu-toggle {
+  display: none;
+}
+
 nav a {
     color: #333;
     font-size: 1.2em;
@@ -41,8 +59,7 @@ nav a:hover {
 
 .new-hero {
   display: flex;
-  height: 750px;
-  justify-content: center;
+  align-items: stretch;
 }
 
 .hero-text {
@@ -52,18 +69,23 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 3.7em;
+  font-weight: bold;
+  text-align: left;
 }
 
 .hero-image-wrapper {
   flex: 0 0 60%;
-  height: 100%;
+  height: auto;
 }
 
 .hero-svg {
   width: 100%;
   height: 100%;
+}
+
+.space {
+    margin-left:80px;
 }
 
 footer {
@@ -74,11 +96,53 @@ footer {
     font-size: 0.9rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+    .hero-text {
+        font-size: 2.5em;
+    }
+}
+
+
+@media (max-width: 768px) {
     header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between; 
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    top: 60px; /* header高さの下 */
+    right: 0;
+    background-color: #fff;
+    width: 200px;
+    flex-direction: column;
+    display: none;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  nav a {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    color: #333 !important;
+    display: block;
+    text-align: left;
+  }
+
+  #menu-toggle:checked + .hamburger + nav {
+    display: flex;
+  }
+
+    nav.active {
+        display: flex;
     }
 
     .new-hero {
@@ -86,11 +150,10 @@ footer {
         height: auto;
     }
 
-    .hero-text, .hero-image {
-        flex: none;
-        width: 100%;
+    .hero-text {
         height: 250px;
-        clip-path: none; 
+        padding-top: 6.5rem;
+        font-size: 2.5em;
     }
 
     nav {
@@ -98,7 +161,7 @@ footer {
     }
 
     nav a {
-        font-size: 1.0em;
+        font-size: 1em;
         margin-right: 1rem;
         color: #fff;
     }
