@@ -31,6 +31,19 @@ th {
     white-space: nowrap;
 }
 
+a,a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+i {
+    color: #b22222;
+}
+
 @media (max-width: 768px) {
     main {
         padding: 1rem;
