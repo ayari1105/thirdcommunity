@@ -1,3 +1,87 @@
+/* =========================
+   section 共通レイアウト
+========================= */
+.section {
+  padding: 0 2rem;
+}
+
+.section-white {
+  background-color: #fff;
+}
+
+.section-gray {
+  background-color: #f5f5f5;
+}
+
+.section-news {
+  padding: 1rem 3rem 3rem;
+}
+
+/* =========================
+   section 見出しエリア
+========================= */
+.section-head {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section-head p,
+.section-head h1 {
+  text-align: center;
+}
+
+.section-head .mission,
+.section-head .action {
+  margin-bottom: 0.5rem;
+}
+
+.section-head .program,
+.section-head .news {
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   section 本文エリア
+========================= */
+.section-body-lg {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section-body-md {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* =========================
+   News 装飾
+========================= */
+.news-deco {
+  color: #a9a9a9;
+}
+
+.news-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+/* =========================
+   header
+========================= */
+.header-logo {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1 {
     text-align: center;
 }
