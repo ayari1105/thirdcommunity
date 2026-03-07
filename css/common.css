@@ -1,7 +1,6 @@
-
 body {
     margin: 0;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     color: #333;
     background-color: #fff;
 }
@@ -12,8 +11,8 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: rgba(0, 31, 91, 0.8);
-    color: white;
+    background-color: #fff;
+    color: #333;
     backdrop-filter: blur(8px);
     padding: 1rem 2rem;
     border-bottom: 1px solid #ddd;
@@ -27,16 +26,71 @@ header h1 {
     font-size: 1.5rem;
 }
 
+.header-logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: 0.3s;
+}
+
+#menu-toggle {
+  display: none;
+}
+
 nav a {
-    color: white;
+    color: #333;
+    font-size: 1.2em;
     text-decoration: none;
     margin-left: 1.5rem;
     font-weight: bold;
-    font-size: 0.8em;
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.new-hero {
+  display: flex;
+  align-items: stretch;
+}
+
+.hero-text {
+  flex: 0 0 40%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 3.7em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.hero-image-wrapper {
+  flex: 0 0 60%;
+  height: auto;
+}
+
+.hero-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.space {
+    margin-left:80px;
 }
 
 footer {
@@ -47,15 +101,62 @@ footer {
     font-size: 0.9rem;
 }
 
-.right_justified {
-    text-align: right;
+@media (max-width: 1200px) {
+    .hero-text {
+        font-size: 2.5em;
+    }
 }
 
-@media (max-width: 600px) {
-    header {
+@media (max-width: 768px) {
+  header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between; 
+  }
+
+    .hamburger {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    top: 60px; /* header高さの下 */
+    right: 0;
+    background-color: #fff;
+    width: 200px;
+    flex-direction: column;
+    display: none;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  nav a {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    color: #333 !important;
+    display: block;
+    text-align: left;
+  }
+
+  #menu-toggle:checked + .hamburger + nav {
+    display: flex;
+  }
+
+    nav.active {
+        display: flex;
+    }
+
+    .new-hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-text {
+        display: none;
+        height: 250px;
+        padding-top: 6.5rem;
+        font-size: 2.5em;
     }
 
     nav {
@@ -63,11 +164,15 @@ footer {
     }
 
     nav a {
+        font-size: 1em;
         margin-right: 1rem;
-        color: white;
+        color: #fff;
     }
 
     nav a:hover {
         text-decoration: underline;
     }
+}
+.fa-solid.fa-file-pdf{
+  margin-left: 3px;
 }
