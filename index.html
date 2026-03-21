@@ -3,167 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>特定非営利活動法人サードコミュニティ - ホーム</title>
+  <title>サードコミュニティ</title>
+
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
 
-  <header>
-    <h1>
-      <a href="index.html" class="header-logo">
-        サードコミュニティ
-      </a>
-    </h1>
+  <div id="root"></div>
 
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-
-    <nav>
-      <a href="about.html">団体概要</a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9L4RW42GX15gIB0587HXgewVum_5aOVWrMWs5S845DSJ-4Q/viewform" target="_blank">お問い合わせ</a>
-    </nav>
-  </header>
-
-  <section class="new-hero">
-    <div class="hero-text">
-      <p>こどもたちに<br><span class="space"></span>第3の居場所を</p>
-    </div>
-    <div class="hero-image-wrapper">
-      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="hero-svg">
-        <defs>
-          <clipPath id="clip-curve" clipPathUnits="objectBoundingBox">
-            <path d="M0.15,0 Q0,0.5 0.15,1 L1,1 L1,0 Z" />
-          </clipPath>
-        </defs>
-        <image
-          x="0"
-          y="0"
-          width="100%"
-          height="100%"
-          preserveAspectRatio="xMidYMid meet"
-          xlink:href="./images/main.jpg"
-          clip-path="url(#clip-curve)"
-        />
-      </svg>
-    </div>
-  </section>
-
-  <!-- Mission -->
-  <section class="section section-white">
-    <div class="section-head">
-      <p class="mission">Mission</p>
-    </div>
-    <div class="section-body-lg">
-      <div class="activity-item">
-        <div class="activity-text">
-          <div class="activity-top">
-            <p class="mission-title">～こどもたちに第３の居場所を～</p>
-            <p class="mission-text">
-              すべての子ども・若者に、つながりと学び、そして未来への希望を。<br>
-              私たちは、家庭や学校だけでは満たしきれない「第3の居場所」を社会に根づかせ、
-              誰もが尊厳をもって育ち、可能性をひらいていける社会の実現を目指します。<br>
-              学びを支えること、進路をともに考えること、地域とのあたたかな関係性を築くこと、
-              それら一つひとつの営みを通じて、子どもたちが未来に向かって自分らしく歩める社会の土台をつくっていきます。
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Action -->
-  <section class="section section-gray">
-    <div class="section-head">
-      <p class="action">Action</p>
-    </div>
-    <div class="section-body-lg">
-      <div class="activity-item">
-        <div class="activity-text">
-          <div class="activity-top">
-            <p class="action-text">私たちは、すべての子ども・若者が安心して過ごせる「第3の居場所」の創出を通じて、以下の事業を推進します。</p>
-            <p class="action-plan">学習・教育支援による基礎学力の向上と学びの継続支援</p>
-            <p class="action-plan">進路・キャリア支援による将来設計の支援および社会的自立の促進</p>
-            <p class="action-plan">地域と連携した居場所づくりを通じた、コミュニティの活性化と地域包摂の実現</p>
-            <p class="action-text">これらの事業を通じて、子ども・若者が持つ可能性を最大限に引き出し、持続可能な社会の構築に寄与します。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Program -->
-  <section class="section section-white">
-    <div class="section-head">
-      <h1 class="program">Program</h1>
-    </div>
-    <div class="section-body-lg">
-      <div class="activity">
-          <div class="activity-right">
-            <div class="activity-title">
-              <h1>学習・教育支援</h1>
-            </div>
-            <div class="activity-text">
-              <p>小中高校生向けに苦手な教科の克服や定期的な学習の場、テスト・受験対策としてご利用いただけるプログラムです。<br>
-                英語や算数・数学などを中心に、さまざまな教科に対応いたします。<br>
-                現役の大学生や塾講師の経験を持つスタッフからアドバイスをもらいながら学習し、苦手な教科の克服や学習の習慣化をしていきませんか？<br>
-                進路等の悩みがある人・やる気が出ず学習の場が欲しい人も、ぜひご参加をお待ちしています。</p>
-            <div class="activity-bottom">
-              <p class="right_justified"><a href="https://cevec.net/event" class="attend_button" target="_blank" rel="noopener noreferrer">プログラムに参加する</a></p>
-            </div>
-            </div>
-          </div>
-          <div>
-            <img src="./images/academicsupport.jpg" alt="学習・教育支援">
-          </div>
-        </div>
-        <div class="activity-item">
-        <img src="./images/careersupport.jpg" alt="進路・キャリア支援">
-        <div class="activity-text">
-            <div class="activity-top">
-              <h1>進路・キャリア支援</h1>
-              <p>受験・就活・留学・教員採用試験等の経験談や大学生活・高校生活・仕事の話などを下の世代に話す機会づくりをしています。<br>
-                高校生・大学生向けの進路支援も実施しています。</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="activity-item">
-        <img src="./images/community.jpg" alt="地域活動">
-        <div class="activity-text">
-            <div class="activity-top">
-              <h1>コミュニティの活性化</h1>
-              <p>サードコミュニティでは地域の団体などと協力した企画や子どもたちと一緒に楽しめる企画を行っています。<br>
-                現在は立川市の子ども未来センターのプログラムや児童館での企画に参加しています。</p>
-              </div>
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <!-- News -->
-  <section class="section section-white section-news">
-    <div class="section-head">
-      <p class="news"><span class="news-deco">- </span>News<span class="news-deco"> -</span></p>
-    </div>
-    <div class="section-body-md">
-      <div class="news-item">
-        <p class="news-date">2024年12月10日</p>
-        <p class="news-text">特定非営利活動法人サードコミュニティを設立しました。</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 特定非営利活動法人サードコミュニティ. All rights reserved.
-  </footer>
+  <script type="text/babel" src="js/app.js"></script>
 
 </body>
 </html>
