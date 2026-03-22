@@ -80,7 +80,7 @@ nav a:hover {
 }
 
 .hero-image-wrapper {
-  flex: 0 0 60%;
+  flex: 1 0 100%;
   height: auto;
 }
 
