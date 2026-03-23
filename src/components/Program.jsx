@@ -2,7 +2,7 @@ const programs = [
   {
     type: "main",
     title: "学習・教育支援",
-    img: "public/images/academicsupport.jpg",
+    img: "/images/academicsupport.jpg",
     description: (
       <>
         小中高校生向けに苦手な教科の克服や定期的な学習の場、テスト・受験対策としてご利用いただけるプログラムです。
@@ -22,7 +22,7 @@ const programs = [
   {
     type: "normal",
     title: "進路・キャリア支援",
-    img: "public/images/careersupport.jpg",
+    img: "/images/careersupport.jpg",
     description: (
       <>
         受験・就活・留学・教員採用試験等の経験談や大学生活・高校生活・仕事の話などを下の世代に話す機会づくりをしています。
@@ -34,7 +34,7 @@ const programs = [
   {
     type: "normal",
     title: "コミュニティの活性化",
-    img: "public/images/community.jpg",
+    img: "/images/community.jpg",
     description: (
       <>
         サードコミュニティでは地域の団体などと協力した企画や子どもたちと一緒に楽しめる企画を行っています。
